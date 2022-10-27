@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-*
-{
+
+* {
     font-family: 'Roboto Slab', serif;
     box-sizing: border-box;
 }
-body
-{
+
+body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     display: flex;
@@ -13,13 +13,13 @@ body
     align-items: center;
     background-image: url('https://wallpaperboat.com/wp-content/uploads/2019/06/plain-black-09.jpg');
 }
-h1
-{
-    text-shadow: 2px 2px 5px gold; 
-    color:black;
+
+h1 {
+    text-shadow: 2px 2px 5px gold;
+    color: black;
 }
-.imgs
-{
+
+.imgs {
     margin-top: 20px;
     width: 90%;
     display: flex;
@@ -27,59 +27,59 @@ h1
     flex-wrap: wrap;
     justify-content: center;
 }
-#searchForm
-{
+
+#searchForm {
     text-align: center;
-} 
-#query
-{
+}
+
+#query {
     width: 300px;
     height: 45px;
     border-radius: 20px;
     padding: 8px;
     border: 3px solid gold;
-    background:none;
+    background: none;
     color: whitesmoke;
 }
-button
-{
+
+button {
     width: 150px;
     height: 40px;
     background-color: black;
-    border:none;
+    border: none;
     border-radius: 50px;
     font-size: 1.1rem;
     color: gold;
     transition: .3s;
 }
-button:hover
-{
+
+button:hover {
     cursor: pointer;
     background-color: cadetblue;
     transform: scale(1.1);
 }
-::placeholder 
-{
+
+::placeholder {
     color: black;
 }
-#fav
-{
-    text-shadow: 2px 2px 5px black; 
+
+#fav {
+    text-shadow: 2px 2px 5px black;
     color: rgba(255, 217, 0, 0.897);
     background: none;
-    
+
 }
-button:active
-{
+
+button:active {
     background-color: lightblue;
 }
-.poster
-{
+
+.poster {
     margin: 5px;
     border-radius: 5px;
 }
-.detailsDiv
-{
+
+.detailsDiv {
     visibility: hidden;
     width: 210px;
     height: 0px;
@@ -88,7 +88,7 @@ button:active
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
     overflow-y: scroll;
-    border-radius: 0 0  5px 5px;
+    border-radius: 0 0 5px 5px;
     margin-left: 5px;
     padding: 2px;
     text-align: center;
@@ -96,41 +96,70 @@ button:active
     bottom: 5px;
 }
 
-.poster:hover + .detailsDiv
-{
+.poster:hover+.detailsDiv {
     visibility: visible;
     height: 160px;
 }
-.detailsDiv:hover
-{
+
+.detailsDiv:hover {
     visibility: visible;
     height: 160px;
 }
-.eachShowDiv
-{
+
+.eachShowDiv {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     position: relative;
 }
-.titleName,.description,.language
-{
+
+.titleName,
+.description,
+.language {
     padding: 0 5px;
     font-family: cursive;
 }
-span
-{
+
+span {
     color: rgb(172, 89, 250);
 }
-a
-{
-    text-decoration: none;
-    color: white;
-    background-color: blue;
-    border-radius: 50px;
-    padding: 8px;
+
+.footer-basic {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    padding: 10px;
+    color: #4b4c4d;
 }
-a:hover
-{
-    background-color: rgb(112, 112, 247);
+
+.footer-basic .social {
+    text-align: center;
+}
+
+.footer-basic .social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-basic .social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
 }
